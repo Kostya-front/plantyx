@@ -1,0 +1,100 @@
+@green-color: #09ab09;
+.default__text(@font__weight; @font__size; @font__family) {
+  font-weight: @font__weight;
+  font-size: @font__size;
+  font-family: @font__family;
+}
+
+.main {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 55px;
+  @media screen and (min-width: 320px) {
+    padding-top: 9%;
+    padding-bottom: 0;
+  }
+  &__title {
+    color: #010101;
+    font-size: 96px;
+    font-family: "Belleza";
+    font-weight: 300;
+    @media screen and (min-width: 320px) {
+      font-size: calc(3vw + 15px);
+    }
+  }
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: 45% 50%;
+  }
+  &__button {
+    color: white;
+    background-color: #010101;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 44px;
+    padding-right: 44px;
+    border-radius: 38px;
+    transition: 1s;
+    border: none;
+    margin-top: 27px;
+    @media screen and (min-width: 320px) {
+      font-size: calc(1vw + 6px);
+      padding: 3% 8%;
+      margin-top: 6%;
+    }
+    &:hover {
+      background-color: @green-color;
+    }
+  }
+  &__text {
+    z-index: 2;
+    &__bold {
+      .default__text(500, 24px, sans-serif);
+      width: 54%;
+      margin-top: 75px;
+      @media screen and (min-width: 320px) {
+        margin-top: 15%;  
+        font-size: calc(1vw + 10px);
+        width: 100%;
+      }
+    }
+    &__light {
+      .default__text(200, 16px, sans-serif);
+      margin-top: 35px;
+      @media screen and (min-width: 320px){
+        margin-top: 8%;
+        font-size: calc(1vw + 6px);
+      }
+    }
+  }
+  &__links {
+    display: flex;
+    gap: 90px;
+    margin-top: 55px;
+    font-size: 36px;
+    color: #000;
+    opacity: 0.5;
+    &__bold {
+      font-weight: 700;
+    }
+    &__light {
+      font-family: "Lora";
+    }
+    @media screen and (min-width: 320px) {
+      font-size: calc(2vw + 8px);
+      gap: calc(2vw + 8px);
+      margin-top: 14%;
+    }
+  }
+}
+
+
+.body__hidden {
+  overflow: hidden;
+}

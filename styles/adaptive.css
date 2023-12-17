@@ -1,0 +1,97 @@
+@media screen and (min-width: 1500px) {
+
+    .header__logo {
+        width: 8.5vw
+    }
+
+    .header__icons {
+        gap: 2vw;
+    }
+
+    .header__icon {
+        width: 1.6vw;
+    }
+
+    .navigation {
+        gap: 3vw;
+    }
+
+    .navigation__link {
+        font-size: 1.2vw;
+    }
+
+    .main__title {
+        font-size: 7vw;
+    }
+
+    .main__text__bold {
+        font-size: 1.5vw;
+        margin-top: 5vw;
+    }
+
+    .main__text__light {
+        font-size: 1.2vw;
+        margin-top: 2.5vw;
+    }
+
+    .main__links {
+        gap: 6vw;
+        margin-top: 4vw;
+        font-size: 2.5vw;
+    }
+
+    .main__button {
+        font-size: 1.1vw;
+        margin-top: 2vw;
+        padding: 2.4% 6%;
+    }
+
+    .learn {
+        padding-top: 6vw;
+        padding-bottom: 11vw;
+    }
+
+    .slider__item__first {
+        height: 34vw;
+    }
+
+    .slider__item__text {
+        font-size: 2.5vw;
+    }
+
+    .title {
+        font-size: 1.5vw;
+    }
+
+    .cards__item {
+        gap: 1.3vw;
+    }
+
+    .cards__title {
+        font-size: 3.3vw;
+        width: 45%;
+    }
+
+    .cards__container {
+        grid-template-rows: 41.5vw;
+    }
+
+    .cards__item__text {
+        font-size: 1.4vw;
+        font-weight: 600;
+    }
+
+    .photos__grid {
+        grid-template-rows: 56vw 54vw;
+    }
+
+    .photos__link {
+        font-size: 1.5vw;
+    }
+
+    .photos__item__title {
+        font-size: 3.3vw;
+        width: 40%;
+    }
+}
+

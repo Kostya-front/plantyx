@@ -1,0 +1,155 @@
+.photos__grid {
+  display: grid;
+  grid-template-areas: "first__card second__card" "third__card third__card";
+}
+@media screen and (min-width: 320px) {
+  .photos__grid {
+    grid-template-rows: 87vw 60vw;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 14px;
+    column-gap: 16px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .photos__grid {
+    row-gap: 50px;
+    column-gap: 60px;
+    grid-template-rows: 774px 746px;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+.photos__item {
+  transform: scale(1);
+  transition: 0.5s;
+  box-shadow: 0px 0px 0px white;
+  position: relative;
+}
+.photos__item__bg {
+  background-image: url("../images/grid-bg3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+@media screen and (min-width: 320px) {
+  .photos__item__bg {
+    filter: blur(7px);
+  }
+}
+@media screen and (min-width: 1025px) {
+  .photos__item__bg {
+    filter: unset;
+  }
+}
+.photos__item__text {
+  position: relative;
+}
+@media screen and (min-width: 320px) {
+  .photos__item__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .photos__item__text {
+    display: block;
+    text-align: left;
+  }
+}
+.photos__item__title {
+  font-family: "Lora";
+}
+@media screen and (min-width: 320px) {
+  .photos__item__title {
+    width: 100%;
+    font-size: calc(3vw + 10px);
+  }
+}
+@media screen and (min-width: 1025px) {
+  .photos__item__title {
+    font-size: 48px;
+    width: 30%;
+  }
+}
+.photos__item:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 20px #000;
+}
+.photos__item:nth-child(3) {
+  padding: 72px 116px 72px 116px;
+  grid-area: third__card;
+}
+@media screen and (min-width: 320px) {
+  .photos__item:nth-child(3) {
+    padding: 3% 6%;
+  }
+}
+.photos__item:nth-child(2) {
+  background-image: url("../images/grid-bg2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  grid-area: second__card;
+}
+.photos__item:nth-child(1) {
+  background-image: url("../images/grid-bg1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  grid-area: first__card;
+}
+.photos__link {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: 700;
+  background-image: linear-gradient(-225deg, #000000 0%, #0e4308 29%, #19ac20 67%, #43dd28 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientButton 2s infinite;
+}
+.photos__link__button {
+  display: block;
+  background-color: black;
+  width: 1.6vw;
+  height: 1.6vw;
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+}
+@media screen and (min-width: 320px) {
+  .photos__link__button {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .photos__link__button {
+    width: calc(1vw + 15px);
+    height: calc(1vw + 15px);
+  }
+}
+@keyframes gradientButton {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}

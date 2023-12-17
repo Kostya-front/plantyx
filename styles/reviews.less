@@ -1,0 +1,110 @@
+.reviews {
+    padding-bottom: 10%;
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        @media screen and (min-width: 320px) {
+            grid-template-columns: 1fr;
+            gap: calc(1vw + 15px);
+        }
+        @media screen and (min-width:1025px) {
+            grid-template-columns: 1.5fr 3fr 0.5fr;
+            align-items: flex-start;
+        }
+    }
+    &__left {
+        display: flex;
+        &__title {
+            font-family: "Lora";
+            text-transform: uppercase;
+            @media screen and (min-width: 320px) {
+                font-size: calc(1vw + 15px);
+            }
+            @media screen and (min-width: 1025px) {
+                font-size: calc(0.5vw + 13px);
+            }
+        }
+        &__text {
+            @media screen and (min-width: 320px) {
+                font-size: calc(1vw + 10px);
+                text-align: center;
+            }
+
+            @media screen and (min-width: 1025px) {
+                font-size: calc(0.5vw + 9px);
+                text-align: left;
+            }
+        }
+        @media screen and (min-width: 320px) {
+            flex-direction: column;
+            align-items: center;
+            justify-self: center;
+            gap: calc(1vw + 7px);
+        }
+
+        @media screen and (min-width: 1025px) {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-self: center;
+            gap: calc(1vw + 7px);
+        }
+        &__rating {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: calc(0.5vw + 10px);
+        }
+        &__count {
+            font-size: calc(0.5vw + 10px);
+        }
+    }
+    &__slide {
+        &__text {
+            font-weight: bold;
+            @media screen and (min-width: 320px) {
+                font-size: calc(3vw + 10px);
+                text-align: center;
+            }
+            @media screen and (min-width: 1025px) {
+                font-size: calc(2vw + 10px);
+                text-align: left;
+            }
+        }
+        &__author {
+            display: flex;
+            flex-direction: column;
+            & span {
+                @media screen and (min-width: 320px) {
+                    font-size: calc(2vw + 10px);   
+                }
+                @media screen and (min-width: 1025px) {
+                    font-size: calc(1vw + 10px);
+                }
+                &:nth-child(1) {
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+    &__buttons {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+        & button {
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3%;
+            @media screen and (min-width: 320px){
+                width: calc(3vw + 20px);
+                height: calc(3vw + 20px);
+            }
+            @media screen and (min-width: 1025px){
+                width: calc(1vw + 20px);
+                height: calc(1vw + 20px);
+            }
+        }
+    }
+}

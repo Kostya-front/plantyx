@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow+Semi+Condensed:wght@600;700;900&family=Inter:wght@500&family=Noto+Sans:wght@300;400&family=Poppins:wght@300;400&family=Quicksand&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow+Semi+Condensed:wght@600;700;900&family=Belleza&family=Inter:wght@500&family=Noto+Sans:wght@300;400&family=Poppins:wght@300;400&family=Quicksand:wght@400;700&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/default.css" />
+    <link rel="stylesheet" href="./styles/adaptive.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="content header__flex">
+        <a class="header__logo" href="/">
+          <img src="./images/logo.png" alt="" />
+        </a>
+
+        <nav class="navigation">
+          <a class="navigation__link" href="/">Растения</a>
+          <a class="navigation__link" href="/">Офисные растения</a>
+          <a class="navigation__link" href="/">Забота о растениях </a>
+          <a class="navigation__link" href="/">О нас</a>
+        </nav>
+
+        <div class="header__icons">
+          <a class="header__icon" href="/">
+            <img src="./images/Extra Icons.svg" alt="" />
+          </a>
+
+          <a class="header__icon" href="/">
+            <img src="./images/Component 2.svg" alt="" />
+          </a>
+
+          <a class="header__icon" href="/">
+            <img src="./images/Component 4.png" alt="" />
+          </a>
+
+          <div onclick="toggleActiveClass()" class="header__burger">
+            <div class="header__burger__line"></div>
+
+            <div class="header__burger__line"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="main">
+      <div class="content main__grid">
+        <div class="main__text">
+          <h1 class="main__title">Best house plants varieties.</h1>
+
+          <button class="main__button">Shop now</button>
+
+          <p class="main__text__bold">
+            Beautiful living greenery for homes and offices
+          </p>
+
+          <p class="main__text__light">Wer've been mentioned in the press</p>
+
+          <div class="main__links">
+            <a class="main__links__bold" href="https://www.bloomberg.com/europe"
+              >Bloomberg</a
+            >
+            <a
+              class="main__links__light"
+              href="https://www.forbes.com/?sh=4226c9ab2254"
+              >Forbes</a
+            >
+          </div>
+        </div>
+
+        <div class="main__image">
+          <img src="./images/unsplash_YAPZt8wxMO4.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="learn">
+      <div class="content learn__content">
+        <div class="left__text">
+          Each houseplant set is handled quickly and safely before being sent to
+          your destination in specially designed insulated packaging.
+        </div>
+
+        <div class="right__text">
+          Learn how ve take care of your plant at every stage of its journey
+          from our greenhouse to your home.
+        </div>
+
+        <div class="learn__link">
+          <span>learn more</span>
+          <a class="photos__link__button" href="/"
+            ><img src="./images/button__arrow.svg" alt=""
+          /></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="slider">
+      <div class="content slider__content">
+        <div class="slider__background"></div>
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-block w-100 h-100">
+                <div class="slider__item__first slider__item__bg"></div>
+                <div class="slider__item__text">
+                  <span>STEP 1</span>
+                  <span>We put everything together</span>
+                  <div class="slider__buttons">
+                    <button
+                      class="slider__button"
+                      data-bs-target="#carouselExample"
+                      data-bs-slide="prev"
+                    >
+                      <img src="/images/left__arrow.svg" alt="" />
+                    </button>
+                    <button
+                      class="slider__button"
+                      data-bs-target="#carouselExample"
+                      data-bs-slide="next"
+                    >
+                      <img src="./images/right__arrow.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="d-block w-100 h-100">
+                <div class="slider__item__second slider__item__bg"></div>
+                <div class="slider__item__text">
+                  <span>STEP 2</span>
+                  <span>We put everything together</span>
+                  <div class="slider__buttons">
+                    <button
+                      class="slider__button"
+                      data-bs-target="#carouselExample"
+                      data-bs-slide="prev"
+                    >
+                      <img src="/images/left__arrow.svg" alt="" />
+                    </button>
+                    <button
+                      class="slider__button"
+                      data-bs-target="#carouselExample"
+                      data-bs-slide="next"
+                    >
+                      <img src="./images/right__arrow.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="d-block w-100 h-100">
+                <div class="slider__item__third slider__item__bg"></div>
+                <div class="slider__item__text">
+                  <span>STEP 3</span>
+                  <span>We put everything together</span>
+                  <div class="slider__buttons">
+                    <button
+                      class="slider__button"
+                      data-bs-target="#carouselExample"
+                      data-bs-slide="prev"
+                    >
+                      <img src="/images/left__arrow.svg" alt="" />
+                    </button>
+                    <button
+                      class="slider__button"
+                      data-bs-target="#carouselExample"
+                      data-bs-slide="next"
+                    >
+                      <img src="./images/right__arrow.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cards">
+      <div class="content cards__content">
+        <div class="cards__text">
+          <span class="title">OUR SHOP</span>
+
+          <h2 class="cards__title">
+            Here are the best seller from our varieties
+          </h2>
+        </div>
+      </div>
+
+      <swiper-container>
+        <swiper-slide>
+          <div class="cards__item">
+            <div class="cards__item__bg"></div>
+            <div class="cards__item__text">
+              <span>Fiddle-leaf fig</span>
+              <span>$110.99</span>
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="cards__item">
+            <div class="cards__item__bg"></div>
+            <div class="cards__item__text">
+              <span>Fiddle-leaf fig</span>
+              <span>$110.99</span>
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="cards__item">
+            <div class="cards__item__bg"></div>
+            <div class="cards__item__text">
+              <span>Fiddle-leaf fig</span>
+              <span>$110.99</span>
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="cards__item">
+            <div class="cards__item__bg"></div>
+            <div class="cards__item__text">
+              <span>Fiddle-leaf fig</span>
+              <span>$110.99</span>
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="cards__item">
+            <div class="cards__item__bg"></div>
+            <div class="cards__item__text">
+              <span>Fiddle-leaf fig</span>
+              <span>$110.99</span>
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="cards__item">
+            <div class="cards__item__bg"></div>
+            <div class="cards__item__text">
+              <span>Fiddle-leaf fig</span>
+              <span>$110.99</span>
+            </div>
+          </div>
+        </swiper-slide>
+      </swiper-container>
+    </section>
+
+    <section class="reviews">
+      <div class="content reviews__container">
+        <div class="reviews__left">
+          <span class="reviews__left__title">
+            reviews
+          </span>
+
+          <div class="reviews__left__text">Shop with confidance by reading customer
+            reviews given by individuals who have used
+            Bioomey. Excelient quality and streamlined
+            service are both offered here.
+          </div>
+
+          <div class="reviews__left__rating">
+            <img src="./images/stars.png" alt="">
+            <span class="reviews__left__number">5/5</span>
+          </div>
+
+          <span class="reviews__left__count">2.479 reviews</span>
+
+        </div>
+
+        <div id="carouselReviews" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="reviews__slide">
+                <p class="reviews__slide__text">We adore all our friends atBloomey,
+                  especially the beauties who have come
+                  to live with us! Great advice when
+                  needed, beautifully and safely packaged.
+                  Highly recommend, it's just the best
+                  place for healthy plants and great value!
+                </p>
+
+                <div class="reviews__slide__author">
+                  <span>Pamela S.</span>
+                  <span>Lake Forest, CA</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="reviews__slide">
+                <p class="reviews__slide__text">We adore all our friends atBloomey,
+                  especially the beauties who have come
+                  to live with us! Great advice when
+                  needed, beautifully and safely packaged.
+                  Highly recommend, it's just the best
+                  place for healthy plants and great value!
+                </p>
+
+                <div class="reviews__slide__author">
+                  <span>Pamela S.</span>
+                  <span>Lake Forest, CA</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="reviews__slide">
+                <p class="reviews__slide__text">We adore all our friends atBloomey,
+                  especially the beauties who have come
+                  to live with us! Great advice when
+                  needed, beautifully and safely packaged.
+                  Highly recommend, it's just the best
+                  place for healthy plants and great value!
+                </p>
+
+                <div class="reviews__slide__author">
+                  <span>Pamela S.</span>
+                  <span>Lake Forest, CA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews__buttons">
+          <button
+            class="reviews__button"
+            data-bs-target="#carouselReviews"
+            data-bs-slide="prev"
+          >
+            <img src="/images/left__arrow.svg" alt="" />
+          </button>
+          <button
+            class="reviews__button"
+            data-bs-target="#carouselReviews"
+            data-bs-slide="next"
+          >
+            <img src="./images/right__arrow.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="photos">
+      <div class="content photos__grid">
+        <div class="photos__item"></div>
+        <div class="photos__item"></div>
+        <div class="photos__item">
+          <div class="photos__item__bg"></div>
+
+          <div class="photos__item__text">
+            <h2 class="photos__item__title">Get inspired from our Instagram</h2>
+
+            <p class="main__text__light">
+              If you use the hashtag #bioomey on Instagram, well spotlight you.
+            </p>
+  
+            <div class="photos__link">
+              <span>Check it out</span>
+              <a class="photos__link__button" href="/"
+                ><img src="./images/button__arrow.svg" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form">
+      <div class="content form__content">
+        <h3 class="form__title">
+          Stay update with special offers,
+          plant-parenting tips, and more.
+        </h3>
+
+        <form>
+          <input placeholder="Your email" type="text">
+          <button>Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="content footer__flex">
+        <a class="footer__logo" href="/"> <img src="./images/logo.png" alt="" /> </a>
+
+        <nav class="footer__navigation">
+          <a class="navigation__link" href="/">Растения</a>
+          <a class="navigation__link" href="/">Офисные растения</a>
+          <a class="navigation__link" href="/">Забота о растениях </a>
+        </nav>
+
+        <div class="footer__icons">
+          <a class="footer__icon" href="/"> <img src="./images/facebook.svg" alt="" /> </a>
+
+          <a class="footer__icon" href="/"> <img src="./images/twitter.svg" alt="" /> </a>
+
+          <a class="footer__icon" href="/"> <img src="./images/insta.svg" alt="" /> </a>
+        </div>
+      </div>
+    </footer>
+    
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./scripts/script.js"></script>
+
+
+    <script>
+      // swiper element
+      const swiperEl = document.querySelector('swiper-container');
+    
+      // swiper parameters
+      const swiperParams = {
+        spaceBetween: 30,
+        breakpoints: {
+          320: {
+            slidesPerView: 1
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3.3,
+          },
+        },
+        on: {
+          init() {
+            // ...
+          },
+        },
+      };
+    
+      // now we need to assign all parameters to Swiper element
+      Object.assign(swiperEl, swiperParams);
+    
+      // and now initialize it
+      swiperEl.initialize();
+    </script>
+  </body>
+</html>
